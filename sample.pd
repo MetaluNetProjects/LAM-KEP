@@ -1,0 +1,11 @@
+#N canvas 547 207 598 316 12;
+#X obj 45 114 r \$3-datadir;
+#X obj 37 25 table \$3-\$2-\$1-sampleL;
+#X obj 37 48 table \$3-\$2-\$1-sampleR;
+#X obj 45 189 soundfiler;
+#X obj 45 141 list prepend \$1 \$2 \$3;
+#X msg 45 164 read -resize \$4/bank\$2/\$1.wav \$3-\$2-\$1-sampleL
+\$3-\$2-\$1-sampleR, f 63;
+#X connect 0 0 4 0;
+#X connect 4 0 5 0;
+#X connect 5 0 3 0;

@@ -1,0 +1,2 @@
+#N canvas 1 82 450 300 12;
+#X obj 77 78 clone sample 4 \$1 \$2;
